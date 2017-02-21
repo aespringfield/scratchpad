@@ -22,6 +22,7 @@ Drill.prototype = {
       this.ampHoursLeft -= ampHours;
       console.log("Drilled successfully. Battery has " + this.ampHoursLeft.toFixed(2) + " amp-hours left.");
     } else {
+      alert("Insufficient charge to complete drilling. Recharge battery.");
       console.log("Did " + this.ampHoursLeft.toFixed(2) + " amp-hours of drilling. Recharge battery.");
       this.ampHoursLeft = 0;
     }
